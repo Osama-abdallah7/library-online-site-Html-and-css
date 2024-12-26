@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cont {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--main-colore);
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: var(--main-colore);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #E87C19;
+}
+
+.address {
+    text-align: center;
+}
+
+.address h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.address p {
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p, .contact-form h2, .address h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .form-group label, .form-group input, .form-group textarea {
+        font-size: 1rem;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont{
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-info p, .contact-form h2, .address h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 6px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+
+    .address p {
+        font-size: 1rem;
+    }
+}

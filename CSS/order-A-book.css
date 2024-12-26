@@ -1,0 +1,113 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.order-div {
+    background-color: #fafafa; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.big-div {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.big-div h1 {
+    font-size: 2.5rem;
+    color: #F9991D;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.big-div p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.big-div .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form input fields */
+.big-div input[type="text"], input[type="number"], input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Submit button */
+.big-div button {
+    padding: 12px 20px;
+    background-color: #F9991D;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.big-div button:hover {
+    background-color: #E87C19;
+}
+
+/* Responsive styles */
+
+/* For mobile screens */
+@media (max-width: 600px) {
+    .big-div h1 {
+        font-size: 1.8rem;
+    }
+
+    .big-div {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .big-div input[type="text"], input[type="number"], input[type="email"], button {
+        font-size: 1rem;
+    }
+
+    .big-div button {
+        padding: 10px 15px;
+    }
+}
+
+/* For larger screens, such as tablets and up */
+@media (min-width: 600px) and (max-width: 900px) {
+    .big-div {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .big-div h1 {
+        font-size: 2rem;
+    }
+}
+
+  /* For larger screens (desktop) */
+@media (min-width: 900px) {
+    .big-div {
+        width: 60%;
+    }
+}

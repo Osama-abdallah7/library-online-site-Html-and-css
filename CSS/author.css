@@ -1,0 +1,41 @@
+.author-search-container form{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#search-authors {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.author-search-container button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #F9991D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.author-search-container button:hover{
+    background-color: #E87C19;
+}
+.authors .author{
+    margin: 50px 0 0;
+}
+
+@media (max-width: 614px) {
+    .author-search-container form{
+        width: 268px;
+        margin: 80px auto 0;
+    }
+    .author-search-container button{
+        margin: 10px auto 0;
+        width: 100%;
+    }
+}

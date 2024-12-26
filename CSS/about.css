@@ -1,0 +1,164 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    color: #F9991D;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#about .parent-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #F9991D;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mission Section */
+#mission {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#mission .parent-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#mission h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #F9991D;
+}
+
+#mission p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Vision Section */
+#vision {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#vision .parent-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#vision h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #F9991D;
+}
+
+#vision p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Our Values Section */
+#values {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#values .parent-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#values h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #F9991D;
+}
+
+.value-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.value-box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.value-box:hover {
+    transform: translateY(-10px);
+}
+
+.value-box h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0D2537;
+}
+
+.value-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .value-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .value-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

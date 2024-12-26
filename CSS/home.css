@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", serif;
+}
+
+.cards .card{
+    margin-top: 40px;
+}
+
+section{
+    padding: 30px 0;
+    margin-top: 120px;
+}
+
+.btns button{
+    padding: 5px 10px;
+    background-color: var(--main-colore);
+    border: none;
+    outline: none;
+    color: var(--word-color);
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--delay);
+}
+.btns button:not(:first-child){
+    background-color: transparent;
+    color: #0D2537;
+}
+.btns button:hover{
+    background-color: var(--main-colore);
+    color: var(--word-color);
+}
+@media (max-width:767px){
+    section{
+        padding: 0 35px;
+    }
+}
+
+
+.butns{
+    display: none;
+    margin-left: 12px;
+    padding-top: 4px;
+}
+.container .butns ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    min-width: 200px;
+    background-color: #f6f6f6;
+    z-index: 50;
+
+}
+.container .butns ul::before{
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+
+.container .butns{
+    position: relative;
+    cursor: pointer;
+    transition: var(--delay);
+}
+
+.menu{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu span{
+    height: 3px;
+    background-color: var(--main-colore);
+    margin-bottom: 5px;
+}
+
+.menu span:first-child{
+    width: 100%;
+}
+
+.menu span:nth-child(2){
+    width: 60%;
+    transition: var(--delay);
+}
+
+.menu span:last-child{
+    width: 100%;
+}
+
+.butns:hover span:nth-child(2){
+    width: 100%;
+}
+
+.butns:hover ul{
+    display: block;
+}
+
+.butns ul li button{
+    display: block;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    transition: var(--delay);
+}
+.butns ul li{
+    transition: var(--delay);
+}
+
+.butns ul li::after{
+    content: '';
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: var(--delay);
+}
+
+.butns ul li:hover:after{
+    width: 100%;
+}
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:992px){
+    .butns{
+        display: inline-flex;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .btns{
+        display: none;
+    }
+}
